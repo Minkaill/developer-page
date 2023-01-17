@@ -1,0 +1,51 @@
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.progress {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 35px;
+    width: 48%;
+    display: flex;
+    color: #34547A;
+    justify-content: left;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+
+  span {
+      font-size: 16px;
+      display: flex;
+      width: 48%;
+      margin-bottom: 2px;
+      justify-content: left;
+  }
+}
+
+.photo {
+  width: 50%;
+  img {
+    width: 80%;
+  }
+}
+
+.progressbar {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background-color: #eee;
+}

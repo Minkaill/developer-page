@@ -13,9 +13,6 @@ const Header = () => {
     <div className={styles.header}>
       <div
         data-aos="fade-right"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="500"
         className={styles.logo}
       >
         <img
@@ -26,14 +23,11 @@ const Header = () => {
 
       <div
         data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="500"
         className={styles.navbar}
       >
         <Link to="/">ГЛАВНАЯ</Link>
         <Link to="/">ОБ АВТОРЕ</Link>
-        <Link to="/">РАБОТЫ</Link>
+        <Link to="/works">РАБОТЫ</Link>
         <Link to="/">ПРОЦЕСС</Link>
         <Link to="/">КОНТАКТЫ</Link>
       </div>

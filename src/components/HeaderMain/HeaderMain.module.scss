@@ -38,17 +38,22 @@
   }
 
   button {
-      background-color: #34547A;
-      color: white;
-      border: none;
-      cursor: pointer;
-      padding: 22px 41px;
-      font-size: 15px;
-      transition-duration: 0.3s;
+    background-color: #34547a;
+    color: white !important;
+    border: none;
+    cursor: pointer;
+    padding: 22px 41px;
+    font-size: 15px;
+    transition-duration: 0.3s;
 
-      &:hover {
-          background-color: rgb(0, 255, 132);
-          color: #34547A;
-      }
+    &:hover {
+      background-color: rgb(0, 255, 132);
+      color: #34547a !important;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }

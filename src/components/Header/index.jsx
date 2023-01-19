@@ -26,7 +26,7 @@ const Header = () => {
         className={styles.navbar}
       >
         <Link to="/">ГЛАВНАЯ</Link>
-        <Link to="/">ОБ АВТОРЕ</Link>
+        <Link to="/aboutauthor">ОБ АВТОРЕ</Link>
         <Link to="/works">РАБОТЫ</Link>
         <Link to="/">ПРОЦЕСС</Link>
         <Link to="/">КОНТАКТЫ</Link>

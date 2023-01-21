@@ -11,21 +11,17 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <div
-        data-aos="fade-right"
-        className={styles.logo}
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/5047/5047314.png"
-          alt=""
-        />
+      <div data-aos="fade-right" className={styles.logo}>
+        <Link to="/developer-page">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5047/5047314.png"
+            alt=""
+          />
+        </Link>
       </div>
 
-      <div
-        data-aos="fade-left"
-        className={styles.navbar}
-      >
-        <Link to="/">ГЛАВНАЯ</Link>
+      <div data-aos="fade-left" className={styles.navbar}>
+        <Link to="/developer-page">ГЛАВНАЯ</Link>
         <Link to="/aboutauthor">ОБ АВТОРЕ</Link>
         <Link to="/works">РАБОТЫ</Link>
         <Link to="/">ПРОЦЕСС</Link>

@@ -24,11 +24,9 @@ const HeaderMain = () => {
           веб-страницы и его главная задача – точно передать в верстке то, что
           создал дизайнер, а также реализовать пользовательскую логику.
         </p>
-        <button>
-          <a href="https://t.me/mklhdv" target="_blank" rel="noreferrer">
-            НАПИСАТЬ МНЕ
-          </a>
-        </button>
+        <a href="https://t.me/mklhdv" target="_blank" rel="noreferrer">
+          <button>НАПИСАТЬ МНЕ</button>
+        </a>
       </div>
     </div>
   );

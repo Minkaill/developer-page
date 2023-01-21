@@ -5,6 +5,21 @@ import "aos/dist/aos.css";
 import person from "../../image/person.png";
 
 const Skills = () => {
+  const [reactStatic, setReactStatic] = React.useState(0);
+  const [typescript, setTypescript] = React.useState(0);
+  const [webpack, setWebpack] = React.useState(0);
+  const [redux, setRedux] = React.useState(0);
+
+  localStorage.setItem("React", reactStatic);
+  localStorage.setItem("Redux", redux);
+  localStorage.setItem("TypeScript", typescript);
+  localStorage.setItem("Webpack", webpack);
+
+  const reactLocal = localStorage.getItem("React");
+  const reduxLocal = localStorage.getItem("Redux");
+  const typescriptLocal = localStorage.getItem("TypeScript");
+  const webpackLocal = localStorage.getItem("Webpack");
+
   React.useEffect(() => {
     AOS.init();
   }, []);
@@ -14,13 +29,18 @@ const Skills = () => {
       <div data-aos="fade-right" className={styles.progress}>
         <h1>Мои навыки</h1>
         <>
-          <span>React</span>
+          <button
+            disabled={reactStatic === 100}
+            onClick={() => setReactStatic(reactStatic + 10)}
+          >
+            React
+          </button>
           <div className={styles.progressbar}>
             <div
               style={{
                 height: "100%",
-                width: "90%",
-                backgroundColor: "#34547A",
+                width: `${reactLocal}%`,
+                backgroundColor: "rgb(224, 179, 0)",
                 transition: "width 0.5s",
               }}
             ></div>
@@ -28,13 +48,18 @@ const Skills = () => {
         </>
 
         <>
-          <span>TypeScript</span>
+          <button
+            disabled={typescript === 100}
+            onClick={() => setTypescript(typescript + 10)}
+          >
+            TypeScript
+          </button>
           <div className={styles.progressbar}>
             <div
               style={{
                 height: "100%",
-                width: "25%",
-                backgroundColor: "#34547A",
+                width: `${typescriptLocal}%`,
+                backgroundColor: "rgb(224, 179, 0)",
                 transition: "width 0.5s",
               }}
             ></div>
@@ -42,13 +67,15 @@ const Skills = () => {
         </>
 
         <>
-          <span>Redux</span>
+          <button disabled={redux === 100} onClick={() => setRedux(redux + 10)}>
+            Redux
+          </button>
           <div className={styles.progressbar}>
             <div
               style={{
                 height: "100%",
-                width: "85%",
-                backgroundColor: "#34547A",
+                width: `${reduxLocal}%`,
+                backgroundColor: "rgb(224, 179, 0)",
                 transition: "width 0.5s",
               }}
             ></div>
@@ -56,13 +83,18 @@ const Skills = () => {
         </>
 
         <>
-          <span>Webpack</span>
+          <button
+            disabled={webpack === 100}
+            onClick={() => setWebpack(webpack + 10)}
+          >
+            Webpack
+          </button>
           <div className={styles.progressbar}>
             <div
               style={{
                 height: "100%",
-                width: "57%",
-                backgroundColor: "#34547A",
+                width: `${webpackLocal}%`,
+                backgroundColor: "rgb(224, 179, 0)",
                 transition: "width 0.5s",
               }}
             ></div>
@@ -70,8 +102,8 @@ const Skills = () => {
         </>
       </div>
 
-      <div data-aos="fade-left" className={styles.photo}>
-        <img src={person} alt="" />
+      <div className={styles.photo}>
+        <img data-aos="fade-left" src={person} alt="" />
       </div>
     </div>
   );

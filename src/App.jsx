@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Works from "./pages/Works/index";
 import Home from "./pages/Home";
 import AboutAuthor from "./pages/AboutAuthor";
+import NotFound from "./components/NotFound/index";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/developer-page" element={<Home />} />
         <Route path="/works" element={<Works />} />
         <Route path="/aboutauthor" element={<AboutAuthor />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

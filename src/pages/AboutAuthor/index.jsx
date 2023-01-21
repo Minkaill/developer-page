@@ -36,25 +36,21 @@ const AboutAuthor = () => {
           свежим информациям.
         </p>
 
-        <ul className={styles.stack}>
-          <span data-aos="fade-up">За год я приобрел навыки:</span>
-          <li data-aos="fade-up">React, React Native</li>
-          <li data-aos="fade-up">TypeScript</li>
-          <li data-aos="fade-up">
-            Асинхронные работы с данными (axios, fetch)
-          </li>
-          <li data-aos="fade-up">Fullstack разработка</li>
-          <li data-aos="fade-up">NodeJs (Express, Mongoose)</li>
-          <li data-aos="fade-up">Авторизация (bcrypt, jsonwebtoken)</li>
-          <li data-aos="fade-up">Redux, Redux Toolkit</li>
-          <li data-aos="fade-up">
-            Стилизация (CSS, SCSS/SASS, Tailwind CSS, MUI, Bootstrap)
-          </li>
-          <li data-aos="fade-up">React hook form</li>
-          <li data-aos="fade-up">Git - продвинутый</li>
-          <li data-aos="fade-up">React Hooks</li>
-          <li data-aos="fade-up">REST API</li>
-          <li data-aos="fade-up">React Router v8</li>
+        <ul data-aos="fade-up" className={styles.stack}>
+          <span>За год я приобрел навыки:</span>
+          <li>React, React Native</li>
+          <li>TypeScript</li>
+          <li>Асинхронные работы с данными (axios, fetch)</li>
+          <li>Fullstack разработка</li>
+          <li>NodeJs (Express, Mongoose)</li>
+          <li>Авторизация (bcrypt, jsonwebtoken)</li>
+          <li>Redux, Redux Toolkit</li>
+          <li>Стилизация (CSS, SCSS/SASS, Tailwind CSS, MUI, Bootstrap)</li>
+          <li>React hook form</li>
+          <li>Git - продвинутый</li>
+          <li>React Hooks</li>
+          <li>REST API</li>
+          <li>React Router v8</li>
         </ul>
       </div>
     </div>
